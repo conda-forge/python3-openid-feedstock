@@ -11,6 +11,18 @@ Summary: OpenID support for modern servers and consumers.
 
 
 
+Current build status
+====================
+
+Linux: [![Circle CI](https://circleci.com/gh/conda-forge/python3-openid-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/python3-openid-feedstock)
+OSX: [![TravisCI](https://travis-ci.org/conda-forge/python3-openid-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/python3-openid-feedstock)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/python3-openid-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/python3-openid-feedstock/branch/master)
+
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/python3-openid/badges/version.svg)](https://anaconda.org/conda-forge/python3-openid)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/python3-openid/badges/downloads.svg)](https://anaconda.org/conda-forge/python3-openid)
+
 Installing python3-openid
 =========================
 
@@ -31,7 +43,6 @@ It is possible to list all of the versions of `python3-openid` available on your
 ```
 conda search python3-openid --channel conda-forge
 ```
-
 
 
 About conda-forge
@@ -67,18 +78,6 @@ Terminology
 
 **conda-forge** - the place where the feedstock and smithy live and work to
                   produce the finished article (built conda distributions)
-
-Current build status
-====================
-
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/python3-openid-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/python3-openid-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/python3-openid-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/python3-openid-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/python3-openid-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/python3-openid-feedstock/branch/master)
-
-Current release info
-====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/python3-openid/badges/version.svg)](https://anaconda.org/conda-forge/python3-openid)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/python3-openid/badges/downloads.svg)](https://anaconda.org/conda-forge/python3-openid)
 
 
 Updating python3-openid-feedstock
