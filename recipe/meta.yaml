@@ -26,7 +26,8 @@ requirements:
 
   run:
     - python
-    - defusedxml
+    - defusedxml  # [not py27]
+    - defusedxml <=0.4.1  # [py27]
 
 test:
   imports:
