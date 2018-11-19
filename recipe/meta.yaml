@@ -20,7 +20,7 @@ requirements:
     - pip
   run:
     - python
-    - defusedxml # [py>=34]
+    - defusedxml  # [py>=34]
     - defusedxml <=0.4.1  # [py<34]
 
 test:
