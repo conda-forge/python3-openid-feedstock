@@ -1,5 +1,5 @@
-{%set name = "python3-openid" %}
-{%set version = "3.1.0" %}
+{% set name = "python3-openid" %}
+{% set version = "3.1.0" %}
 
 package:
   name: {{ name|lower }}
