@@ -1,32 +1,27 @@
-{%set name = "python3-openid" %}
-{%set version = "3.1.0" %}
-{%set compress_type = "tar.gz" %}
-{%set hash_type = "sha256" %}
-{%set hash_val = "628d365d687e12da12d02c6691170f4451db28d6d68d050007e4a40065868502" %}
-{%set build_num = "0" %}
+{% set name = "python3-openid" %}
+{% set version = "3.1.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.{{ compress_type }}
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ compress_type }}
-  {{ hash_type }}: {{ hash_val }}
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 628d365d687e12da12d02c6691170f4451db28d6d68d050007e4a40065868502
 
 build:
   skip: True  # [py2k]
-  number: {{ build_num }}
-  script: python setup.py install --single-version-externally-managed --record=record.txt
+  number: 1
+  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vv"
 
 requirements:
-  build:
+  host:
     - python
-    - setuptools
-
+    - pip
   run:
     - python
-    - defusedxml
+    - defusedxml  # [py>=34]
+    - defusedxml <=0.4.1  # [py<34]
 
 test:
   imports:
@@ -40,7 +35,7 @@ test:
 
 about:
   home: http://github.com/necaris/python3-openid
-  license: Apache 2.0
+  license: Apache-2.0
   license_file: LICENSE
   license_family: Apache
   summary: 'OpenID support for modern servers and consumers.'
