@@ -340,4 +340,5 @@ Feedstock Maintainers
 
 * [@carlodri](https://github.com/carlodri/)
 * [@pmlandwehr](https://github.com/pmlandwehr/)
+* [@xylar](https://github.com/xylar/)
 
