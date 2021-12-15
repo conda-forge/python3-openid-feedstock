@@ -31,6 +31,10 @@ test:
     - openid.server
     - openid.store
     - openid.yadis
+  requires:
+    - pip
+  commands:
+    - pip check
 
 about:
   home: http://github.com/necaris/python3-openid
